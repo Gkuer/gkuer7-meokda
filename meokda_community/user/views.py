@@ -55,3 +55,5 @@ def register(request):
 
         return render(request, 'register.html', res_data)
 
+def about(request):
+    return render(request, 'about.html')
