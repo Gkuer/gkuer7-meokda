@@ -54,3 +54,4 @@ def register(request):
             meokdauser.save()
 
         return render(request, 'register.html', res_data)
+
