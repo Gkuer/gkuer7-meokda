@@ -42,7 +42,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#"> {{ meokdauser }}</a>
+          <a class="nav-link" href="#"> {{ authoring }}232</a>
         </li>
       </ul>
 
@@ -57,18 +57,18 @@
 
       <div class="card-header bg-transparent" >
         <div class="row">
-          <a class="nav-link navbar-brand  text-muted mr-0" href="#"><h4>{{video.title}}</h4></a>
-          <a class="nav-link navbar-brand  text-muted ml-0 mt-1" href="#"><small>3km</small></a>
+          <a class="nav-link navbar-brand  text-muted mr-0" href="#"><h4>{{video.restaurant}}</h4></a>
+          <a class="nav-link navbar-brand  text-muted ml-0 mt-1" href="#"><small>{{video.distance}}km</small></a>
 
           <a class="nav-link  navbar-brand  text-muted ml-auto" href="#">{{video.author}}</a>
           </li>
         </div>
 
         <div class="row">
-          <a class="nav-link navbar-brand  text-muted mr-0" href="#">음식메뉴</a>
-          <a class="nav-link navbar-brand  text-muted ml-0 mt-1" href="#"><small>8000원</small></a>
+          <a class="nav-link navbar-brand  text-muted mr-0" href="#">{{video.foodname}}</a>
+          <a class="nav-link navbar-brand  text-muted ml-0 mt-1" href="#"><small>{{video.price}}원</small></a>
 
-          <a class="nav-link navbar-brand  ml-auto text-muted" href="#">먹기 전</a>
+          <a class="nav-link navbar-brand  ml-auto text-muted" href="#">{{video.get_status_display }}</a>
         </div>
 
     </div>

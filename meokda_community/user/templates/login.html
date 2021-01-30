@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
       <a class="navbar-brand" href="/">Meokda</a>
 
@@ -35,6 +35,10 @@
         <input class="form-control mr-sm-2" type="text" placeholder="Search">
         <button class="btn btn-secondary " type="submit">검색</button>
       </form>
+
+
+      <button type="button" class="btn btn-info mr-5" style="white-space:nowrap; "
+        onclick="location.href = '/video/new'">글쓰기</button>
 
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
@@ -48,11 +52,15 @@
           <a class="nav-link" href="/user/logout">Logout</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="/user/about">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#"> {{ authoring }}232</a>
         </li>
       </ul>
 
-    </div>
+
   </nav>
 
   <div class="d-lg-flex half">

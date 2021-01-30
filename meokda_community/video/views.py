@@ -11,11 +11,19 @@ from django.core.paginator import Paginator
 
 class VideoListView(ListView):
     model = Video
+
+    def calling(request):
+        user_id = request.session.get('user')
+        meokdauser = meokda_user.objects.get(pk = user_id)
+        authoring = meokdauser
+        return(request, 'video_list.html', {'authoring' : authoring})
     # paginate_by = 5
+
+
 class VideoCreateView(CreateView):
     model = Video
     form_class = VideoForm
-    template_name = 'form.html'
+    template_name = 'form2.html'
 
 
     def form_valid(self, form):
@@ -25,7 +33,7 @@ class VideoCreateView(CreateView):
         video.author = meokdauser
         return super().form_valid(form)
     
-    success_url = '/'
+    # success_url = '/'
 
 
 class VideoDetailView(DetailView):

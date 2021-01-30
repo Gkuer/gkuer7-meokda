@@ -6,7 +6,10 @@ class VideoForm(forms.ModelForm):
     class Meta:
         model = Video
         fields = [
-            'title',
+            'restaurant',
+            'foodname',
             'file',
-
+            'price',
+            'status',
+            'distance',
         ]
