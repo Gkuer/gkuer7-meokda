@@ -6,18 +6,23 @@ from django.views.generic import ListView, DeleteView, DetailView,CreateView,Upd
 from user.models import meokda_user
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.paginator import Paginator
+# import simplejson as json
+# from rest_framework import generics
+# from rest_framework.pagination import PageNumberPegination
 # Create your views here.
 
 
 class VideoListView(ListView):
     model = Video
+    # paginate_by = 10
+
 
     def calling(request):
-        user_id = request.session.get('user')
+        user_id = request.request.session.get('user')
         meokdauser = meokda_user.objects.get(pk = user_id)
         authoring = meokdauser
         return(request, 'video_list.html', {'authoring' : authoring})
-    # paginate_by = 5
+
 
 
 class VideoCreateView(CreateView):
