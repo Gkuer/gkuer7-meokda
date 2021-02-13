@@ -8,6 +8,7 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="/static/bootstrap.min-4.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  {% load humanize %}
 </head>
 
 <body>
@@ -31,30 +32,39 @@
           <a class="nav-link" href="/">Home
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/user/login">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/user/logout">Logout</a>
-        </li>
+        {% if request.session.user %}
+
+      
         <li class="nav-item">
           <a class="nav-link" href="/user/about">About</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#"> {{ authoring }}232</a>
+          <a class="nav-link" href="#">  {{ request.session.user }} </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/user/logout">Logout</a>
+        </li>
+        {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="/user/login">Login</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/user/about">About</a>
+        </li>
+        {% endif %}
       </ul>
 
 
   </nav>
 
-
   <div class="container text-center">
 
     {% for video in video_list reversed %}
     <div class="card text-center mt-5 ">
-
+    
+      <div>  {{ request.session.user }} </div>
       <div class="card-header bg-transparent" >
         <div class="row">
           <a class="nav-link navbar-brand  text-muted mr-0" href="#"><h4>{{video.restaurant}}</h4></a>
@@ -66,7 +76,7 @@
 
         <div class="row">
           <a class="nav-link navbar-brand  text-muted mr-0" href="#">{{video.foodname}}</a>
-          <a class="nav-link navbar-brand  text-muted ml-0 mt-1" href="#"><small>{{video.price}}원</small></a>
+          <a class="nav-link navbar-brand  text-muted ml-0 mt-1" href="#"><small>{{video.price | intcomma}}원</small></a>
 
           <a class="nav-link navbar-brand  ml-auto text-muted" href="#">{{video.get_status_display }}</a>
         </div>

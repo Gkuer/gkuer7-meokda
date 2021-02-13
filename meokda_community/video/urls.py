@@ -9,4 +9,6 @@ urlpatterns = [
     path('<int:pk>/',views.VideoDetailView.as_view(), name = 'video_detail'),
     path('<int:pk>/edit/',views.VideoDetailView.as_view(), name = 'video_edit'),
     path('<int:pk>/delete/',views.VideoDeleteView.as_view(), name = 'video_delete'),
+    path('index/',views.index),
+
 ]

@@ -5,13 +5,16 @@ from django.contrib.auth.hashers import make_password,check_password
 from .forms import LoginForm
 
 # Create your views here.
+
+def index(request):
+    return render(request, 'base2.html', {'username': request.session.get('user')})
+
 def home(request):
     return render(request, 'home.html')
 
 def logout(request):
     if request.session.get('user'):
         del(request.session['user'])
-    
         return redirect('/')
 
 
@@ -19,7 +22,7 @@ def login(request):
     if request.method == "POST":
         form = LoginForm(request.POST)
         if form.is_valid():
-            request.session['user'] = form.user_id
+            request.session['user'] = form.username
             return redirect('/')
     else:
         form = LoginForm()

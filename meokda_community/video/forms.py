@@ -1,6 +1,5 @@
 from django import forms
 from .models import Video
-from user.models import meokda_user
 import os
 
 class VideoForm(forms.ModelForm):
