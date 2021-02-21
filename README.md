@@ -1,5 +1,6 @@
 # 먹다 - 먹고싶은거 다있다.<br>
 음식 동영상 플랫폼 & 주변 맛집 동영상 <br>
+webpage : gkuer.pythonanywhere.com
 contact us : gkuer95@gmail.com<br><br>
 
 점심 뭐먹지? 저녁 뭐먹지? 야식 뭐먹지? <br>
@@ -12,24 +13,24 @@ contact us : gkuer95@gmail.com<br><br>
 
 <h3> 1. 로그인</h3>
 <p align = "center">
-<img width="1792" alt="스크린샷 2021-02-02 오후 9 49 26" src="https://user-images.githubusercontent.com/64361457/106602852-e836a480-65a0-11eb-9657-732dfe9bc701.png">
+<img width="1792" alt="스크린샷 2021-02-02 오후 9 49 26" src="https://user-images.githubusercontent.com/64361457/106602852-e836a480-65a0-11eb-9657-732dfe9bc701.png">
 </p>
 <br><br><br>
 
 
 <h3> 2. 메인화면 </h3>
 <p align = "center">
-<img width="1515" alt="스크린샷 2021-02-02 오후 9 51 29" src="https://user-images.githubusercontent.com/64361457/106602886-f1c00c80-65a0-11eb-8956-bc91d8db5d5a.png"></p>
+<img width="1515" alt="스크린샷 2021-02-02 오후 9 51 29" src="https://user-images.githubusercontent.com/64361457/106602886-f1c00c80-65a0-11eb-8956-bc91d8db5d5a.png"></p>
 <br><br><br>
 
 
 <h3> 3. 글작성 </h3>
 <p align = "center">
-<img width="1792" alt="스크린샷 2021-02-02 오후 9 50 35" src="https://user-images.githubusercontent.com/64361457/106602876-ee2c8580-65a0-11eb-9379-2a2adc401d2e.png">
+<img width="1792" alt="스크린샷 2021-02-02 오후 9 50 35" src="https://user-images.githubusercontent.com/64361457/106602876-ee2c8580-65a0-11eb-9379-2a2adc401d2e.png">
 </p>
 <br><br><br>
 
 <h3> 4. contact us </h3>
 <p align = "center">
-<img width="1391" alt="스크린샷 2021-02-02 오후 9 51 47" src="https://user-images.githubusercontent.com/64361457/106602891-f2f13980-65a0-11eb-8540-8eea8a3b35db.png">
+<img width="1391" alt="스크린샷 2021-02-02 오후 9 51 47" src="https://user-images.githubusercontent.com/64361457/106602891-f2f13980-65a0-11eb-8540-8eea8a3b35db.png">
 </p>
