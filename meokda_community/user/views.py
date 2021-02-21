@@ -7,7 +7,7 @@ from .forms import LoginForm
 # Create your views here.
 
 def index(request):
-    return render(request, 'base2.html', {'username': request.session.get('user')})
+    return render(request, 'base.html', {'username': request.session.get('user')})
 
 def home(request):
     return render(request, 'home.html')
@@ -55,7 +55,8 @@ def register(request):
             )
 
             meokdauser.save()
-
+            
+            return redirect('/user/login')
         return render(request, 'register.html', res_data)
 
 def about(request):

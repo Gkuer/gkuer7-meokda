@@ -131,16 +131,13 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static'),
     os.path.join(BASE_DIR,'user/templates/login-form-06/'),
     os.path.join(BASE_DIR,'user/templates/bootstrap-profile-page/'),
-
 ]
+
+
 
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': [
-        # 'rest_framework.permissions.IsAdminUser',
-    ],
-    'PAGE_SIZE': 10
-}
+
+# STATIC_ROOT = os.path.join(BASE_DIR,'static')

@@ -1,1 +1,8 @@
-{{ username }}
+{% for video in video_list %}
+{{ video.id }}
+{{ video.pk }}
+{{ video.self.pk }}
+{{ video.self.id }}
+
+dd
+{% end for}

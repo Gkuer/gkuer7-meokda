@@ -7,7 +7,7 @@ class VideoForm(forms.ModelForm):
         file = self.cleaned_data.get('file', None)
         if file:
             extension = os.path.splitext(file.name)[-1].lower()
-            if extension not in ('.mp4', '.avi'):
+            if extension not in ('.mp4', '.avi', '.mov','.MP4','.MOV','.AVI'):
                 raise forms.ValidationError('비디오파일을 올려주세요')
             return file
 
