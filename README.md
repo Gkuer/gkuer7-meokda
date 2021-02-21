@@ -1,6 +1,6 @@
 # 먹다 - 먹고싶은거 다있다.<br>
 음식 동영상 플랫폼 & 주변 맛집 동영상 <br>
-webpage : gkuer.pythonanywhere.com<br>
+webpage : http://gkuer.pythonanywhere.com/video/
 contact us : gkuer95@gmail.com<br><br>
 
 점심 뭐먹지? 저녁 뭐먹지? 야식 뭐먹지? <br>
